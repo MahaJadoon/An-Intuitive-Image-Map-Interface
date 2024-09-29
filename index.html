@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Store Image Map with 10 Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            width: 50%; /* Adjust the size of the App Store image */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>An Intuitive Image Map Interface</h1>
+    <p>Click on different sides of the App Store image to visit related websites.</p>
+
+    <!-- The App Store image with the image map -->
+    <img src="images/appstore.gif" alt="App Store" usemap="#appstore-map">
+
+    <!-- Defining the image map with 10 clickable areas -->
+    <map name="appstore-map">
+        <!-- Top side -->
+        <area shape="rect" coords="10,10,490,80" href="https://www.google.com/chrome/" alt="Chrome" target="_blank">
+        <!-- Bottom side -->
+        <area shape="rect" coords="10,420,490,490" href="https://mail.google.com/" alt="Gmail" target="_blank">
+        <!-- Left side -->
+        <area shape="rect" coords="10,80,80,420" href="https://www.facebook.com/" alt="Facebook" target="_blank">
+        <!-- Right side -->
+        <area shape="rect" coords="420,80,490,420" href="https://earth.google.com/" alt="Google Earth" target="_blank">
+        <!-- Middle part -->
+        <area shape="rect" coords="150,150,350,350" href="https://www.instagram.com/" alt="Instagram" target="_blank">
+        <!-- Top-left corner -->
+        <area shape="rect" coords="10,10,80,80" href="https://www.linkedin.com/" alt="LinkedIn" target="_blank">
+        <!-- Top-right corner -->
+        <area shape="rect" coords="420,10,490,80" href="https://outlook.live.com/" alt="Outlook" target="_blank">
+        <!-- Bottom-left corner -->
+        <area shape="rect" coords="10,420,80,490" href="https://www.pinterest.com/" alt="Pinterest" target="_blank">
+        <!-- Bottom-right corner -->
+        <area shape="rect" coords="420,420,490,490" href="https://www.youtube.com/" alt="YouTube" target="_blank">
+        <!-- Center-bottom -->
+        <area shape="rect" coords="150,420,350,490" href="https://www.twitter.com/" alt="Twitter" target="_blank">
+    </map>
+
+</body>
+</html>
