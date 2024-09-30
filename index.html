@@ -3,47 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Store Image Map with 10 Links</title>
+    <title>An Intuitive Image Map Interface</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
         }
         img {
-            width: 50%; /* Adjust the size of the App Store image */
-            height: auto;
+            width: 4in;
+            height: 4in; /* Setting the image to 4x4 inches */
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 0;
         }
     </style>
 </head>
 <body>
+    <!-- Main heading -->
     <h1>An Intuitive Image Map Interface</h1>
-    <p>Click on different sides of the App Store image to visit related websites.</p>
+    <!-- Sub heading -->
+    <h2>Clickable Facial Features</h2>
 
-    <!-- The App Store image with the image map -->
-    <img src="images/appstore.gif" alt="App Store" usemap="#appstore-map">
+    <!-- The Image with Image Map -->
+    <img src="image/man.gif" alt="Historical Figure" usemap="#figure-map">
 
-    <!-- Defining the image map with 10 clickable areas -->
-    <map name="appstore-map">
-        <!-- Top side -->
-        <area shape="rect" coords="10,10,490,80" href="https://www.google.com/chrome/" alt="Chrome" target="_blank">
-        <!-- Bottom side -->
-        <area shape="rect" coords="10,420,490,490" href="https://mail.google.com/" alt="Gmail" target="_blank">
-        <!-- Left side -->
-        <area shape="rect" coords="10,80,80,420" href="https://www.facebook.com/" alt="Facebook" target="_blank">
-        <!-- Right side -->
-        <area shape="rect" coords="420,80,490,420" href="https://earth.google.com/" alt="Google Earth" target="_blank">
-        <!-- Middle part -->
-        <area shape="rect" coords="150,150,350,350" href="https://www.instagram.com/" alt="Instagram" target="_blank">
-        <!-- Top-left corner -->
-        <area shape="rect" coords="10,10,80,80" href="https://www.linkedin.com/" alt="LinkedIn" target="_blank">
-        <!-- Top-right corner -->
-        <area shape="rect" coords="420,10,490,80" href="https://outlook.live.com/" alt="Outlook" target="_blank">
-        <!-- Bottom-left corner -->
-        <area shape="rect" coords="10,420,80,490" href="https://www.pinterest.com/" alt="Pinterest" target="_blank">
-        <!-- Bottom-right corner -->
-        <area shape="rect" coords="420,420,490,490" href="https://www.youtube.com/" alt="YouTube" target="_blank">
-        <!-- Center-bottom -->
-        <area shape="rect" coords="150,420,350,490" href="https://www.twitter.com/" alt="Twitter" target="_blank">
+    <!-- Defining the image map with adjusted coordinates -->
+    <map name="figure-map">
+        <!-- Nose -->
+        <area shape="circle" coords="200,180,15" href="https://www.instagram.com" alt="Instagram" target="_blank">
+        <!-- Mouth -->
+        <area shape="rect" coords="180,220,220,240" href="https://www.twitter.com" alt="Twitter" target="_blank">
+        <!-- Forehead -->
+        <area shape="rect" coords="170,100,230,130" href="https://www.linkedin.com" alt="LinkedIn" target="_blank">
+        <!-- Chin -->
+        <area shape="circle" coords="200,270,20" href="https://www.reddit.com" alt="Reddit" target="_blank">
+        <!-- Left ear -->
+        <area shape="circle" coords="130,180,15" href="https://www.pinterest.com" alt="Pinterest" target="_blank">
+        <!-- Right ear -->
+        <area shape="circle" coords="270,180,15" href="https://www.youtube.com" alt="YouTube" target="_blank">
+        <!-- Beard -->
+        <area shape="rect" coords="180,240,220,270" href="https://www.amazon.com" alt="Amazon" target="_blank">
+        <!-- Hair -->
+        <area shape="rect" coords="150,50,250,100" href="https://www.microsoft.com" alt="Microsoft" target="_blank">
+        <!-- Neck -->
+        <area shape="rect" coords="180,270,220,300" href="https://www.apple.com" alt="Apple" target="_blank">
+        <!-- Left cheek -->
+        <area shape="circle" coords="160,180,20" href="https://www.google.com" alt="Google" target="_blank">
     </map>
 
 </body>
